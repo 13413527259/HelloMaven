@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration debug="true">
-	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-		<!-- encoders are by default assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
-		<encoder>
-			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
-		</encoder>
-	</appender>
+<configuration>  
 
-	<root level="debug">
-		<appender-ref ref="STDOUT" />
-	</root>
-</configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">  
+    <encoder>  
+    <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>  
+    </encoder>  
+  </appender>  
+  
+  <root level="debug">  
+    <appender-ref ref="STDOUT" />  
+  </root>  
+</configuration>  
+

@@ -15,7 +15,7 @@ import cn.edu.gcp.service.UserService;
 @Controller
 @RequestMapping("user")
 public class UserController {
-	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	private static Logger logger = LoggerFactory.getLogger(UserController.class);
 	
 	@Autowired
 	private UserService userService;
@@ -23,7 +23,8 @@ public class UserController {
 	@RequestMapping("list")
 	public String list(Model model) {
 		List<User> list=userService.getList();
-		logger.debug("list.size" ,list.size());
+		logger.info("info========to===================呵呵呵呵呵呵呵呵");
+		logger.debug("list.size==========to==================" ,list.size());
 		//System.out.println(list.size());
 		model.addAttribute("list", list);
 		return "list";
