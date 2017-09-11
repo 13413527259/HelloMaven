@@ -6,11 +6,9 @@
   </welcome-file-list>
   
    <servlet>
-        <description>spring mvc servlet</description>
         <servlet-name>springMvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
-            <description>spring mvc 配置文件</description>
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:config/spring-*.xml</param-value>
         </init-param>
