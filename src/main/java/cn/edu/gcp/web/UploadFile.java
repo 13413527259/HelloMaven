@@ -1,7 +1,6 @@
 package cn.edu.gcp.web;
 
 import java.io.File;
-import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 

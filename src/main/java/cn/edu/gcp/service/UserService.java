@@ -11,4 +11,8 @@ public interface UserService {
 	
 	List<User> getList();
 	
+	int editUserNameById(int id,String name);
+
+	int deleteUserById(int id);
+	
 }

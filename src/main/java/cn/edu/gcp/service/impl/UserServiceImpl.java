@@ -25,6 +25,12 @@ public class UserServiceImpl implements UserService{
 		return userDao.queryAll(0, 1000);
 	}
 	
-	
+	public int editUserNameById(int id,String name) {
+		return userDao.updateNameById(name, id);
+	}
+
+	public int deleteUserById(int id) {
+		return userDao.deleteById(id);
+	}
 
 }

@@ -16,7 +16,7 @@
 	 		style='background-color: red'
 		 </c:if>
 	>
-	编号：${item.id }--姓名：${item.name}--age:${item.age}
+	<a href="detail/${item.id }">编号：${item.id }--姓名：${item.name}--age:${item.age}</a>
 	</h3>
 </c:forEach>
 </body>
